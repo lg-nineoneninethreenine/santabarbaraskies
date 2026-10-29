@@ -1,0 +1,23 @@
+{
+  "name": "GNU Octave Environment",
+  "image": "://microsoft.com",
+  "updateContentCommand": "sudo apt update && sudo apt install -y octave",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "asvetliakov.vscode-macro", 
+        "mathworks.matlab"
+      ]
+    }
+  },
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "desktop"
+    }
+  }
+}
